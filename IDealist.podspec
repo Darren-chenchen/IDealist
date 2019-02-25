@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
   s.public_header_files = 'IDealist/IDealist/*.h'
   s.requires_arc = true
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = ['IDealist/IDealist/**/*.swift', 'IDealist/IDealist/**/*.{h,m}']
+  s.source_files = ['IDealist/IDealist/**/*.swift', 'IDealist/IDealist/IDScanCode/Components/*.{h,m}']
   s.resource_bundles = { 
 	'IDealist' => ['IDealist/IDealist/IDUIKit/Images/**/*.png',
   'IDealist/IDealist/IDToast/Images/**/*.png',
@@ -26,5 +26,7 @@ Pod::Spec.new do |s|
   'IDealist/IDealist/IDImagePicker/**/*.{xib,storyboard}',
   'IDealist/IDealist/IDImagePicker/**/*.{lproj,strings}']
   }
+
+  s.dependency 'JXSegmentedView', '0.0.4'
 
 end
