@@ -302,6 +302,7 @@
 		957C2436222404DD0014AD1E /* IDDialogInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C23F5222404DC0014AD1E /* IDDialogInputViewController.swift */; };
 		957C2437222404DD0014AD1E /* TestIDEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C23F7222404DC0014AD1E /* TestIDEmptyViewController.swift */; };
 		957C2438222404DD0014AD1E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C23F8222404DC0014AD1E /* SecondViewController.swift */; };
+		957C243A2224136A0014AD1E /* IDealist.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 957C24392224136A0014AD1E /* IDealist.podspec */; };
 		AC8478CADE785974E27B94F1 /* Pods_IDealist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C20A082EC427C0412CA3F85 /* Pods_IDealist.framework */; };
 /* End PBXBuildFile section */
 
@@ -614,6 +615,7 @@
 		957C23F5222404DC0014AD1E /* IDDialogInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDDialogInputViewController.swift; sourceTree = "<group>"; };
 		957C23F7222404DC0014AD1E /* TestIDEmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestIDEmptyViewController.swift; sourceTree = "<group>"; };
 		957C23F8222404DC0014AD1E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		957C24392224136A0014AD1E /* IDealist.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IDealist.podspec; sourceTree = "<group>"; };
 		D19A73F4F86DA1D580CD38BE /* Pods-IDealist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDealist.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDealist/Pods-IDealist.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -640,6 +642,7 @@
 		9562BBF12223E6AD00954CEB = {
 			isa = PBXGroup;
 			children = (
+				957C24392224136A0014AD1E /* IDealist.podspec */,
 				9562BBFC2223E6AD00954CEB /* IDealist */,
 				9562BBFB2223E6AD00954CEB /* Products */,
 				C7BBF293EB15DFEC854945C0 /* Pods */,
@@ -1536,6 +1539,7 @@
 				9562BD142223E73900954CEB /* btn_back_w@3x.png in Resources */,
 				9562BDBA2223E75E00954CEB /* icn_light@2x.png in Resources */,
 				9562BD662223E73A00954CEB /* ChooseView.xib in Resources */,
+				957C243A2224136A0014AD1E /* IDealist.podspec in Resources */,
 				9562BD2C2223E73A00954CEB /* icn_icn_del@3x.png in Resources */,
 				9562BC5B2223E72A00954CEB /* ic_empty@3x.png in Resources */,
 				9562BC1C2223E70600954CEB /* btn_back@3x.png in Resources */,

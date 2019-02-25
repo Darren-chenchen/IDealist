@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
   s.authors = { 'chenliang' => '1597887620@qq.com' }
   s.source = { :git => 'https://github.com/Darren-chenchen/IDealist.git', :tag => s.version.to_s }
 
-  s.public_header_files = 'IDealist/IDealist/*.h'
+  s.public_header_files = 'IDealist/IDealist/**/*.h'
+
   s.requires_arc = true
 
   s.ios.deployment_target = '9.0'
