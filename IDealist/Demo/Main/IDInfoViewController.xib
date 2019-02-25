@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IDInfoViewController" customModule="IdealDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="id_logo" translatesAutoresizingMaskIntoConstraints="NO" id="dzj-FK-gGr">
+                    <rect key="frame" x="127.5" y="110" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="rjm-zF-JdE"/>
+                        <constraint firstAttribute="height" constant="120" id="zVA-d4-36Q"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I D e a l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08E-K2-Cwz">
+                    <rect key="frame" x="153" y="250" width="69.5" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                    <color key="textColor" red="0.054901960780000002" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0K-he-mIX">
+                    <rect key="frame" x="158" y="286.5" width="59" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="08E-K2-Cwz" firstAttribute="centerX" secondItem="dzj-FK-gGr" secondAttribute="centerX" id="F8b-GJ-xbd"/>
+                <constraint firstItem="dzj-FK-gGr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="110" id="Pis-Dd-OjT"/>
+                <constraint firstItem="v0K-he-mIX" firstAttribute="centerX" secondItem="08E-K2-Cwz" secondAttribute="centerX" id="PrX-Wv-c6R"/>
+                <constraint firstItem="v0K-he-mIX" firstAttribute="top" secondItem="08E-K2-Cwz" secondAttribute="bottom" constant="10" id="Ygi-zK-eJI"/>
+                <constraint firstItem="08E-K2-Cwz" firstAttribute="top" secondItem="dzj-FK-gGr" secondAttribute="bottom" constant="20" id="foa-Tc-J13"/>
+                <constraint firstItem="dzj-FK-gGr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gRS-6r-ueA"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="id_logo" width="100" height="100"/>
+    </resources>
+</document>

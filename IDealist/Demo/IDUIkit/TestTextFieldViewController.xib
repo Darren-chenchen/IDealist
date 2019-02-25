@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestTextFieldViewController" customModule="IdealDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="textF1" destination="dPE-cP-kH2" id="xLx-KF-hLk"/>
+                <outlet property="textF2" destination="mN6-BM-yR6" id="jjj-FS-XmD"/>
+                <outlet property="textF3" destination="pEj-AR-tq8" id="1KP-cY-Y7A"/>
+                <outlet property="textF4" destination="ZTR-9U-NoE" id="mgq-8d-g3z"/>
+                <outlet property="textF5" destination="ymd-yD-uCz" id="5lE-GI-NF1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujC-Ww-bkg">
+                    <rect key="frame" x="0.0" y="80" width="375" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="xi创建的，限制10个字符" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPE-cP-kH2" customClass="IDTextField" customModule="IDUIKit">
+                            <rect key="frame" x="8" y="0.0" width="367" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dPE-cP-kH2" firstAttribute="top" secondItem="ujC-Ww-bkg" secondAttribute="top" id="27L-2g-gDU"/>
+                        <constraint firstAttribute="height" constant="44" id="BvT-cZ-t0O"/>
+                        <constraint firstItem="dPE-cP-kH2" firstAttribute="leading" secondItem="ujC-Ww-bkg" secondAttribute="leading" constant="8" id="DNx-X6-2dq"/>
+                        <constraint firstAttribute="bottom" secondItem="dPE-cP-kH2" secondAttribute="bottom" id="WUm-zT-EJg"/>
+                        <constraint firstAttribute="trailing" secondItem="dPE-cP-kH2" secondAttribute="trailing" id="raT-wo-fpp"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64G-xn-qm7">
+                    <rect key="frame" x="0.0" y="134" width="375" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="只允许输入数字和小数点，设置小数点位数" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mN6-BM-yR6" customClass="IDTextField" customModule="IDUIKit">
+                            <rect key="frame" x="8" y="0.0" width="367" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mN6-BM-yR6" secondAttribute="trailing" id="Mtc-1A-ULH"/>
+                        <constraint firstAttribute="height" constant="44" id="OTj-2A-0Lu"/>
+                        <constraint firstAttribute="bottom" secondItem="mN6-BM-yR6" secondAttribute="bottom" id="bD9-gM-kjC"/>
+                        <constraint firstItem="mN6-BM-yR6" firstAttribute="top" secondItem="64G-xn-qm7" secondAttribute="top" id="h6t-vH-Pnl"/>
+                        <constraint firstItem="mN6-BM-yR6" firstAttribute="leading" secondItem="64G-xn-qm7" secondAttribute="leading" constant="8" id="uLp-sa-YZ9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bk9-a2-fJe">
+                    <rect key="frame" x="0.0" y="188" width="375" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="只允许输入数字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEj-AR-tq8" customClass="IDTextField" customModule="IDUIKit">
+                            <rect key="frame" x="8" y="0.0" width="367" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="pEj-AR-tq8" secondAttribute="bottom" id="0xT-qf-mC1"/>
+                        <constraint firstItem="pEj-AR-tq8" firstAttribute="leading" secondItem="Bk9-a2-fJe" secondAttribute="leading" constant="8" id="4TD-4c-LMk"/>
+                        <constraint firstAttribute="height" constant="44" id="FqB-UO-xJj"/>
+                        <constraint firstItem="pEj-AR-tq8" firstAttribute="top" secondItem="Bk9-a2-fJe" secondAttribute="top" id="T9e-cH-ohY"/>
+                        <constraint firstAttribute="trailing" secondItem="pEj-AR-tq8" secondAttribute="trailing" id="my2-Pw-MBl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xq0-jK-lGq">
+                    <rect key="frame" x="0.0" y="242" width="375" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="禁止输入表情符号emoji" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZTR-9U-NoE" customClass="IDTextField" customModule="IDUIKit">
+                            <rect key="frame" x="8" y="0.0" width="367" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ZTR-9U-NoE" firstAttribute="leading" secondItem="Xq0-jK-lGq" secondAttribute="leading" constant="8" id="0oA-TD-vZQ"/>
+                        <constraint firstItem="ZTR-9U-NoE" firstAttribute="top" secondItem="Xq0-jK-lGq" secondAttribute="top" id="NxC-2x-i9o"/>
+                        <constraint firstAttribute="bottom" secondItem="ZTR-9U-NoE" secondAttribute="bottom" id="bve-EQ-kbm"/>
+                        <constraint firstAttribute="trailing" secondItem="ZTR-9U-NoE" secondAttribute="trailing" id="iTh-0B-cZV"/>
+                        <constraint firstAttribute="height" constant="44" id="jJ3-ud-xkK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFM-U6-QdZ">
+                    <rect key="frame" x="0.0" y="296" width="375" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="正则表达式&quot;^[a-z0－9A-Z]*$&quot;" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ymd-yD-uCz" customClass="IDTextField" customModule="IDUIKit">
+                            <rect key="frame" x="8" y="0.0" width="367" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ymd-yD-uCz" secondAttribute="bottom" id="SN3-Ic-Je6"/>
+                        <constraint firstAttribute="trailing" secondItem="ymd-yD-uCz" secondAttribute="trailing" id="asp-e3-pfw"/>
+                        <constraint firstItem="ymd-yD-uCz" firstAttribute="leading" secondItem="XFM-U6-QdZ" secondAttribute="leading" constant="8" id="bVX-Tu-fN3"/>
+                        <constraint firstAttribute="height" constant="44" id="cKF-PL-x2g"/>
+                        <constraint firstItem="ymd-yD-uCz" firstAttribute="top" secondItem="XFM-U6-QdZ" secondAttribute="top" id="iCJ-ax-8eJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="64G-xn-qm7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="17n-jj-OS2"/>
+                <constraint firstItem="Xq0-jK-lGq" firstAttribute="top" secondItem="Bk9-a2-fJe" secondAttribute="bottom" constant="10" id="1Ww-jY-Tfl"/>
+                <constraint firstAttribute="trailing" secondItem="Bk9-a2-fJe" secondAttribute="trailing" id="4HF-w7-gnh"/>
+                <constraint firstAttribute="trailing" secondItem="ujC-Ww-bkg" secondAttribute="trailing" id="Gov-GU-Y1z"/>
+                <constraint firstItem="XFM-U6-QdZ" firstAttribute="top" secondItem="Xq0-jK-lGq" secondAttribute="bottom" constant="10" id="U23-Nj-lZJ"/>
+                <constraint firstItem="Bk9-a2-fJe" firstAttribute="top" secondItem="64G-xn-qm7" secondAttribute="bottom" constant="10" id="UFB-w6-Gzi"/>
+                <constraint firstItem="ujC-Ww-bkg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XbT-5m-Lc5"/>
+                <constraint firstItem="Xq0-jK-lGq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="asm-Am-gxj"/>
+                <constraint firstAttribute="trailing" secondItem="64G-xn-qm7" secondAttribute="trailing" id="iid-Wu-V3v"/>
+                <constraint firstItem="XFM-U6-QdZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jha-JU-hbU"/>
+                <constraint firstItem="ujC-Ww-bkg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="kvE-Zh-V92"/>
+                <constraint firstItem="64G-xn-qm7" firstAttribute="top" secondItem="ujC-Ww-bkg" secondAttribute="bottom" constant="10" id="pTH-jH-bzY"/>
+                <constraint firstAttribute="trailing" secondItem="XFM-U6-QdZ" secondAttribute="trailing" id="qWb-cH-pVE"/>
+                <constraint firstAttribute="trailing" secondItem="Xq0-jK-lGq" secondAttribute="trailing" id="voA-AK-AiY"/>
+                <constraint firstItem="Bk9-a2-fJe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x4G-Rf-jh9"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>

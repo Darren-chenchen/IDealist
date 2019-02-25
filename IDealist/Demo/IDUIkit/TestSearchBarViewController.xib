@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestSearchBarViewController" customModule="IdealDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="nibSearchbar" destination="u0H-Ia-ZL0" id="92P-yZ-hXX"/>
+                <outlet property="searchBar2" destination="tYr-KY-ZWz" id="PtM-qi-YoL"/>
+                <outlet property="searchBar3" destination="uUC-sI-3RR" id="mRX-uB-Gem"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0H-Ia-ZL0" customClass="IDSearchBar" customModule="IDUIKit">
+                    <rect key="frame" x="0.0" y="84" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="H8r-25-6vX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYr-KY-ZWz" customClass="IDSearchBar" customModule="IDUIKit">
+                    <rect key="frame" x="0.0" y="143" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="yLv-Fm-cfD"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="zFu-yW-F8s"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUC-sI-3RR" customClass="IDSearchBar" customModule="IDUIKit">
+                    <rect key="frame" x="0.0" y="202" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="YUe-BX-H2V"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="g2b-07-IvC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uUC-sI-3RR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ghb-oS-bmS"/>
+                <constraint firstItem="tYr-KY-ZWz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qdx-3z-CXe"/>
+                <constraint firstItem="u0H-Ia-ZL0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="bKy-bp-JjR"/>
+                <constraint firstItem="u0H-Ia-ZL0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cKD-cb-PV5"/>
+                <constraint firstAttribute="trailing" secondItem="tYr-KY-ZWz" secondAttribute="trailing" id="cc4-xe-kPq"/>
+                <constraint firstItem="tYr-KY-ZWz" firstAttribute="top" secondItem="u0H-Ia-ZL0" secondAttribute="bottom" constant="15" id="ck0-Z1-g6d"/>
+                <constraint firstAttribute="trailing" secondItem="uUC-sI-3RR" secondAttribute="trailing" id="fx2-Dx-yI9"/>
+                <constraint firstItem="uUC-sI-3RR" firstAttribute="top" secondItem="tYr-KY-ZWz" secondAttribute="bottom" constant="15" id="rsg-tl-T7L"/>
+                <constraint firstAttribute="trailing" secondItem="u0H-Ia-ZL0" secondAttribute="trailing" id="u4V-BS-Rlt"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="153.37331334332833"/>
+        </view>
+    </objects>
+</document>

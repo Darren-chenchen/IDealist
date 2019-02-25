@@ -1,0 +1,6 @@
+framework module Pods_IDealist {
+  umbrella header "Pods-IDealist-umbrella.h"
+
+  export *
+  module * { export * }
+}

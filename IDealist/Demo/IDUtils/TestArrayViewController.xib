@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestArrayViewController" customModule="Ideal_IOS" customModuleProvider="target">
+            <connections>
+                <outlet property="label1" destination="k4i-P7-FpU" id="6xY-cC-CkU"/>
+                <outlet property="label2" destination="Qud-nv-DwF" id="BEv-DL-h9y"/>
+                <outlet property="label3" destination="S39-EO-QkL" id="svh-T3-R1t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4i-P7-FpU">
+                    <rect key="frame" x="30" y="100" width="330" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qud-nv-DwF">
+                    <rect key="frame" x="30" y="140.5" width="330" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="let arr2 = arr.id_filterDuplicates({$0})" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S39-EO-QkL">
+                    <rect key="frame" x="30" y="176" width="330" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.去重" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPm-3a-LtL">
+                    <rect key="frame" x="16" y="71" width="47" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="S39-EO-QkL" firstAttribute="top" secondItem="Qud-nv-DwF" secondAttribute="bottom" constant="15" id="7TC-Qe-xi1"/>
+                <constraint firstItem="k4i-P7-FpU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="GKR-bi-7iL"/>
+                <constraint firstAttribute="trailing" secondItem="S39-EO-QkL" secondAttribute="trailing" constant="15" id="JBH-40-Lsp"/>
+                <constraint firstItem="QPm-3a-LtL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="LGH-He-Aov"/>
+                <constraint firstItem="Qud-nv-DwF" firstAttribute="top" secondItem="k4i-P7-FpU" secondAttribute="bottom" constant="20" id="Zwd-zL-ulL"/>
+                <constraint firstAttribute="trailing" secondItem="k4i-P7-FpU" secondAttribute="trailing" constant="15" id="dcb-8U-AME"/>
+                <constraint firstItem="Qud-nv-DwF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="kdf-3W-BTL"/>
+                <constraint firstItem="QPm-3a-LtL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="spc-B9-ca3"/>
+                <constraint firstItem="k4i-P7-FpU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="tse-ph-TZL"/>
+                <constraint firstAttribute="trailing" secondItem="Qud-nv-DwF" secondAttribute="trailing" constant="15" id="ygh-ZI-Z90"/>
+                <constraint firstItem="S39-EO-QkL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="zQT-6Q-P3P"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

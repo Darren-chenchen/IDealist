@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestIDSegmentedViewController" customModule="IdealDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="moreBtn" destination="fqn-Kd-aqH" id="GTX-Ra-vJ2"/>
+                <outlet property="seg" destination="pUN-mf-1W4" id="DGo-Jx-IHi"/>
+                <outlet property="seg1" destination="Cil-cB-PGG" id="Hm0-RI-pDW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="system" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvU-HB-1NI">
+                    <rect key="frame" x="16" y="90" width="55" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsK-Qq-S9A">
+                    <rect key="frame" x="0.0" y="121" width="375" height="50"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pUN-mf-1W4" customClass="IDSegmentedView" customModule="IDUIKit">
+                            <rect key="frame" x="16" y="11" width="343" height="29"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pUN-mf-1W4" secondAttribute="trailing" constant="16" id="JCD-dF-Vos"/>
+                        <constraint firstItem="pUN-mf-1W4" firstAttribute="leading" secondItem="bsK-Qq-S9A" secondAttribute="leading" constant="16" id="Kgb-ar-cXJ"/>
+                        <constraint firstAttribute="height" constant="50" id="cIW-X2-QzL"/>
+                        <constraint firstItem="pUN-mf-1W4" firstAttribute="centerY" secondItem="bsK-Qq-S9A" secondAttribute="centerY" id="lqo-oP-N1W"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="custom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrp-sc-nca">
+                    <rect key="frame" x="16" y="200" width="57" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqa-Hx-jBc">
+                    <rect key="frame" x="0.0" y="229" width="375" height="50"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-cB-PGG" customClass="IDSegmentedView" customModule="IDUIKit">
+                            <rect key="frame" x="16" y="11" width="343" height="29"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fBg-Vb-QCm"/>
+                        <constraint firstItem="Cil-cB-PGG" firstAttribute="centerY" secondItem="xqa-Hx-jBc" secondAttribute="centerY" id="z6f-OC-2sd"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqn-Kd-aqH">
+                    <rect key="frame" x="137.5" y="392" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.054901960780000002" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2R2-9V-jOW"/>
+                        <constraint firstAttribute="width" constant="100" id="Ulo-UZ-X38"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="-27" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="81" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="更多样式" image="cutting_ic_right_white"/>
+                    <connections>
+                        <action selector="clickMoreBtrn:" destination="-1" eventType="touchUpInside" id="f9E-MM-t41"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Cil-cB-PGG" firstAttribute="trailing" secondItem="pUN-mf-1W4" secondAttribute="trailing" id="4Sr-BR-clJ"/>
+                <constraint firstItem="xqa-Hx-jBc" firstAttribute="top" secondItem="Mrp-sc-nca" secondAttribute="bottom" constant="8" id="DSA-Ux-GMy"/>
+                <constraint firstItem="DvU-HB-1NI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Kb1-zc-M7a"/>
+                <constraint firstItem="xqa-Hx-jBc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L7J-lc-22P"/>
+                <constraint firstItem="fqn-Kd-aqH" firstAttribute="top" secondItem="xqa-Hx-jBc" secondAttribute="bottom" constant="113" id="U8y-nG-vnV"/>
+                <constraint firstItem="DvU-HB-1NI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="UIe-bK-61F"/>
+                <constraint firstAttribute="trailing" secondItem="xqa-Hx-jBc" secondAttribute="trailing" id="VGm-vI-oql"/>
+                <constraint firstItem="Mrp-sc-nca" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="X7g-r4-fNV"/>
+                <constraint firstItem="bsK-Qq-S9A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aAc-HM-w3F"/>
+                <constraint firstItem="Mrp-sc-nca" firstAttribute="top" secondItem="bsK-Qq-S9A" secondAttribute="bottom" constant="29" id="bWU-F8-oCT"/>
+                <constraint firstAttribute="trailing" secondItem="bsK-Qq-S9A" secondAttribute="trailing" id="km1-GV-7il"/>
+                <constraint firstItem="Cil-cB-PGG" firstAttribute="height" secondItem="pUN-mf-1W4" secondAttribute="height" id="lFg-Gh-Air"/>
+                <constraint firstItem="bsK-Qq-S9A" firstAttribute="top" secondItem="DvU-HB-1NI" secondAttribute="bottom" constant="10" id="lYE-ZN-Mtd"/>
+                <constraint firstItem="Cil-cB-PGG" firstAttribute="leading" secondItem="pUN-mf-1W4" secondAttribute="leading" id="w8A-D7-d60"/>
+                <constraint firstItem="fqn-Kd-aqH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wOR-dr-7yj"/>
+            </constraints>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cutting_ic_right_white" width="16" height="16"/>
+    </resources>
+</document>
