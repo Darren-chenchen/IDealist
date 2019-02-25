@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         IDealistConfig.share.id_setupMainColor(color: UIColor.init(redValue: 14, green: 92, blue: 255, alpha: 1))
         
         let tabbarVC = IDTabbarViewController()
