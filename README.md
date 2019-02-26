@@ -530,7 +530,7 @@ public var id_type: IDProgressCircleViewType = .circle
     
 ### 9.IDSelectView  
  
- > IDSelectView目前提供3种类型的视图,详细参数较多，请参考demo事例。
+ > IDSelectView目前提供3种类型的视图,详细参数较多，请参考demo事例。该视图对JXSegmentedView的再次封装，提取了常用的功能点。
  
  ```
 public enum IDSelectViewType {
@@ -540,13 +540,13 @@ public enum IDSelectViewType {
 }
  ```
  
- ![](http://github.app.hd123.cn:10080/ideal/Docs/raw/e5e5640ec8e2fbcd3adc0f21700523d92032b33f/screenShot/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-25%20%E4%B8%8B%E5%8D%884.44.26.png)
+ ![](https://github.com/Darren-chenchen/IDealist/blob/master/screenShot/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-25%20%E4%B8%8B%E5%8D%884.44.26.png?raw=true)
  
 
-![](http://github.app.hd123.cn:10080/ideal/Docs/raw/861e856879df20999146b91b8585d2947dbdc118/screenShot/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-25%20%E4%B8%8B%E5%8D%884.44.39.png)
+![](https://github.com/Darren-chenchen/IDealist/blob/master/screenShot/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-25%20%E4%B8%8B%E5%8D%884.44.39.png?raw=true)
   
 
-![](http://github.app.hd123.cn:10080/ideal/Docs/raw/861e856879df20999146b91b8585d2947dbdc118/screenShot/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-25%20%E4%B8%8B%E5%8D%884.44.50.png)
+![](https://github.com/Darren-chenchen/IDealist/blob/master/screenShot/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-25%20%E4%B8%8B%E5%8D%884.44.50.png?raw=true)
 
 # IDUtils (扩展方法和工具类)
 
