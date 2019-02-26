@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class NavProgressView: UIView {
     lazy var gradientLayer: CAGradientLayer = {
         let gradientLayer = CAGradientLayer()

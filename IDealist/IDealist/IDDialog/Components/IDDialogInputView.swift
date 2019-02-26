@@ -11,7 +11,7 @@ import UIKit
 typealias IDDialogInputViewClouse = (String)->()
 
 class IDDialogInputView: UIView {
-    
+
     lazy var msgLabel: UILabel = {
         let title = UILabel.init(frame: CGRect.zero)
         title.textAlignment = .center

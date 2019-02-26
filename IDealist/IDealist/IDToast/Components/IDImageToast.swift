@@ -9,7 +9,7 @@
 import UIKit
 
 class IDImageToast: UIView {
-        
+    
     lazy var titleLabel: UILabel = {
         let label = UILabel.init(frame: CGRect.zero)
         label.textColor = UIColor.white

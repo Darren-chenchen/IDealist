@@ -7,7 +7,6 @@
 //
 
 #import "BundleTools.h"
-
 @implementation BundleTools
 + (NSBundle*)getCurrentBundle {
     NSBundle *podBundle = [NSBundle bundleForClass: self.class];

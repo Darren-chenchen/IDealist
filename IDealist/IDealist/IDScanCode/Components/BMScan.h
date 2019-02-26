@@ -9,7 +9,6 @@
 
 #ifndef BMScan_h
 #define BMScan_h
-
 #import "BMScanDefaultCotroller.h"
 #import "BMDefaultUIView.h"
 #import "UIImage+BMScan.h"

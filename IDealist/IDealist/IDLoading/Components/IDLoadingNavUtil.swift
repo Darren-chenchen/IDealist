@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class IDLoadingNavUtil: NSObject {
     
     var superView: UIView = UIView()

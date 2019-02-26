@@ -14,7 +14,7 @@ public class IDSearchBar: UIView, UISearchBarDelegate {
         let searchBar = UISearchBar.init(frame: self.bounds)
         return searchBar
     }()
-    
+
     /// 占位文字
     public var id_placeHolder: String = "请输入搜索关键字" {
         didSet {

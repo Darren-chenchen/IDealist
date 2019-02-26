@@ -9,7 +9,6 @@
 import UIKit
 
 typealias IDDialogTextViewTextDidChangeClouse = (CGFloat) -> ()
-
 class IDDialogTextView: UITextView {
     var placehoder: String? {
         didSet{

@@ -28,7 +28,6 @@ open class IDTextField: UITextField {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        
         self.common()
     }
     public required init?(coder aDecoder: NSCoder) {

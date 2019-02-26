@@ -9,7 +9,7 @@
 import UIKit
 
 public class IDView: UIView {
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.common()

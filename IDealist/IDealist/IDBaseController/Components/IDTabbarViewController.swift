@@ -9,7 +9,7 @@
 import UIKit
 
 open class IDTabbarViewController: UITabBarController {
-    
+
     // 主界面点击手势，用于在菜单划出状态下点击主页后自动关闭菜单
     var tapGesture: UITapGestureRecognizer!
     // 首页中间的主要视图的来源

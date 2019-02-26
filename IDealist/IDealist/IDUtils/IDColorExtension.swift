@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 public extension UIColor {
    public convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

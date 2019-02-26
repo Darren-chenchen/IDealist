@@ -12,7 +12,6 @@
 #import <AudioToolbox/AudioToolbox.h>
 
 #pragma mark - 私有C函数
-
 CGRect screenBounds() {
     UIScreen *screen = [UIScreen mainScreen];
     if (![screen respondsToSelector:@selector(fixedCoordinateSpace)]

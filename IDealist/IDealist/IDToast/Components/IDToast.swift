@@ -13,7 +13,6 @@ public enum IDToastPosition {
     case middle
     case bottom
 }
-
 public class IDToast: NSObject {
     // 默认纯文本、展示在window上、2秒消失、中间位置
     // onView: 可以指定显示在指定的view上

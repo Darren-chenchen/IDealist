@@ -14,7 +14,6 @@ public enum IDDialogUtilType {
     case input // 可输入文字的弹框
     case custom // 自定义内容
 }
-
 public enum IDDialogUtilImageType {
     case success
     case fail

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 public enum IDButtonType {
     case normal
     case primary

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 public extension UIDevice {
     /// iPhone X 在竖屏下，keyWindow 的 safeAreaInsets 值为：{top: 44, left: 0, bottom: 34, right: 0}
     /// 而在横屏下，其值为：{top: 0, left: 44, bottom: 21, right: 44}

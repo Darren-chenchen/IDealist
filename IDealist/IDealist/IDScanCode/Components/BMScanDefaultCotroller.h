@@ -8,7 +8,6 @@
 //
 
 #import "BMScanController.h"
-
 /**
  参考系统动画 fillMode
  */

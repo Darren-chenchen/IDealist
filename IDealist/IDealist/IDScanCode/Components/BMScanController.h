@@ -9,7 +9,6 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-
 typedef void(^BMPhotoAlbumQRCodeBlock)(NSArray <NSString *> *codeArray);
 
 /**

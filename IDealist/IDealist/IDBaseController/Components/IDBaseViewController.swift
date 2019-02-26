@@ -9,7 +9,7 @@
 import UIKit
 
 open class IDBaseViewController: UIViewController {
-    
+
     /// 自定义导航栏
     open lazy var id_customNavBar: IDCustomNavgationView = {
         let nav = IDCustomNavgationView()

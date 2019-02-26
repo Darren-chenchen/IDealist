@@ -11,7 +11,6 @@ import UIKit
 public typealias IDTextViewTextDidChangedClouse = (CGFloat) -> ()
 
 public class IDTextView: UITextView {
-
     public var id_placehoder: String? {
         didSet{
             // 设置文字

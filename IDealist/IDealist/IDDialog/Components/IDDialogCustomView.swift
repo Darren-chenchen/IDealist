@@ -11,7 +11,7 @@ import UIKit
 typealias IDDialogCustomViewClouse = (UIView?)->()
 
 class IDDialogCustomView: UIView {
-    
+
     lazy var msgLabel: UILabel = {
         let title = UILabel.init(frame: CGRect.zero)
         title.textAlignment = .center

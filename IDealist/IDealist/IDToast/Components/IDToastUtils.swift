@@ -13,7 +13,6 @@ public enum IDToastUtilsImageType {
     case fail
     case warning
 }
-
 class IDToastUtils: Operation {
 
     private var _executing = false

@@ -12,7 +12,6 @@
 #import "BundleTools.h"
 
 @implementation BMDefaultUIView
-
 - (UIImageView *)scanImageView1 {
     if (!_scanImageView1) {
         _scanImageView1 = [UIImageView new];

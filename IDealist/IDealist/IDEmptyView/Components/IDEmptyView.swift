@@ -280,11 +280,7 @@ extension String {
 
 extension UIImage {
     class func imageNamed(_ name: String, aClass: AnyClass) -> UIImage? {
-        if let url = Bundle(for: aClass).url(forResource: "IDEmptyView", withExtension: "bundle") {
-            let bundle = Bundle(url: url)
-            return UIImage(named: name, in: bundle, compatibleWith: nil)
-        }
-        return nil
+        return UIImage(named: name, in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
     }
 }
 

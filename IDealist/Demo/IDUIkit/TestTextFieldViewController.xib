@@ -9,13 +9,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestTextFieldViewController" customModule="IdealDemo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestTextFieldViewController" customModule="IDealist" customModuleProvider="target">
             <connections>
-                <outlet property="textF1" destination="dPE-cP-kH2" id="xLx-KF-hLk"/>
-                <outlet property="textF2" destination="mN6-BM-yR6" id="jjj-FS-XmD"/>
-                <outlet property="textF3" destination="pEj-AR-tq8" id="1KP-cY-Y7A"/>
-                <outlet property="textF4" destination="ZTR-9U-NoE" id="mgq-8d-g3z"/>
-                <outlet property="textF5" destination="ymd-yD-uCz" id="5lE-GI-NF1"/>
+                <outlet property="textF1" destination="dPE-cP-kH2" id="eYd-yM-hea"/>
+                <outlet property="textF2" destination="mN6-BM-yR6" id="vtb-dd-C09"/>
+                <outlet property="textF3" destination="pEj-AR-tq8" id="dTX-vB-eVI"/>
+                <outlet property="textF4" destination="ZTR-9U-NoE" id="ZZJ-Vp-c6U"/>
+                <outlet property="textF5" destination="ymd-yD-uCz" id="qMo-K2-UPu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

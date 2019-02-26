@@ -9,7 +9,6 @@
 import UIKit
 
 public class IDProgressView: UIProgressView {
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         

@@ -13,7 +13,6 @@ typealias IDDialogRightClouse = ()->()
 
 class IDDialogNormalView: UIView {
     var timer: DispatchSourceTimer?
-
     var countDownNumber = 0 {
         didSet{
             if countDownNumber <= 0 {

@@ -46,7 +46,7 @@ public class IDLoading: NSObject {
         }
         self.gifUtil = IDLoadingGifUtil.init(gifName: gifName,type: type,  onView: onView)
     }
-    
+
     // 对应id_show
     public static func id_dismiss() {
         self.freeUtil?.dismiss()

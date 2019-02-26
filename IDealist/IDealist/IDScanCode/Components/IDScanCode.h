@@ -12,5 +12,4 @@
 #import "BMScanDefaultCotroller.h"
 #import "BMDefaultUIView.h"
 #import "UIImage+BMScan.h"
-
 #endif /* Header_h */

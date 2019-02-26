@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIImage{
-    
+
     /// 通过颜色生成图片
     public class func id_renderImageWithColor(_ color: UIColor, size: CGSize) -> UIImage {
         UIGraphicsBeginImageContext(size)

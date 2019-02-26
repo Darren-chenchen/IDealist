@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class IDLoadingFreeUtil: NSObject {
     lazy var bottomView: UIView = {
         let bottom = UIView()

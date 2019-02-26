@@ -8,7 +8,7 @@
 import UIKit
 
 open class IDBaseNavViewController: UINavigationController {
-    
+
     override open func viewDidLoad() {
         super.viewDidLoad()
         

@@ -9,7 +9,6 @@
 import UIKit
 
 class IDLoadingGifUtil: NSObject {
-    
     lazy var gifView: GifView = {
         let img = GifView()
         return img

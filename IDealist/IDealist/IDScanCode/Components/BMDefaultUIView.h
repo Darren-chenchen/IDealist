@@ -9,7 +9,6 @@
 
 #import <UIKit/UIKit.h>
 #import "BMScanDefaultCotroller.h"
-
 /**
  扫描UI
  */

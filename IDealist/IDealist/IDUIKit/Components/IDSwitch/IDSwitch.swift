@@ -16,7 +16,7 @@ public class IDSwitch: UIControl {
     
     public var id_lineWidth : CGFloat = 1
     
-    public var id_mainColor : UIColor = (IDealistConfig.share.mainColor ?? UIColor(red:0.341,  green:0.914,  blue:0.506, alpha:1)) {
+    public var id_mainColor : UIColor = (IDealistConfig.share.mainColor) {
         didSet {
             setUpView()
         }

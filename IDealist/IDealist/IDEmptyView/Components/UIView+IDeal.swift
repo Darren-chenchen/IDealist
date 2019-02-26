@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIView {
-    
+
     static var IDEmptyViewKey: UInt8 = 0
     public var id_empty: IDEmptyView? {
         

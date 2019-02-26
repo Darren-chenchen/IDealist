@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 public extension URL {
     // 过滤字符串中的特殊字符
     public static func id_init(string:String) -> URL? {

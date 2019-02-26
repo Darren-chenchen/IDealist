@@ -12,7 +12,6 @@ public enum IDProgressCircleViewType {
     case circle
     case pie
 }
-
 public class IDProgressCircleView: UIView {
 
     /// value的范围是0-100
@@ -32,7 +31,7 @@ public class IDProgressCircleView: UIView {
     }
     
     /// 颜色
-    public var id_fillColor: UIColor = (IDealistConfig.share.mainColor ?? UIColor.white) {
+    public var id_fillColor: UIColor = (IDealistConfig.share.mainColor) {
         didSet {
             self.setNeedsDisplay()
         }

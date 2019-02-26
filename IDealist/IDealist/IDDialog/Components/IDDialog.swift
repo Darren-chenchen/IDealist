@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 public class IDDialog: NSObject {
     /// 普通弹框
     public static func id_show(

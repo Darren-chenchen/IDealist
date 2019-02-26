@@ -84,7 +84,6 @@ class IDRefreshLoadingView: UIView {
         layer.removeAllAnimations()
     }
 }
-
 extension IDRefreshLoadingView: CAAnimationDelegate {
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         self.end()

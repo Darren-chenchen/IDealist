@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 public extension String {
     /// 字符串截取函数
     public func id_subString(to index: Int) -> String {

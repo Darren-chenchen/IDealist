@@ -12,7 +12,7 @@ import QuartzCore
 
 typealias completionBlock = ()->()  // 动画完成后做的事情
 class GifView: UIView, CAAnimationDelegate {
-    
+
     private var gifurl: URL! = BundleUtil.getCurrentBundle().url(forResource: "Lodging", withExtension: "gif") // 把本地图片转化成URL
     private var imageArr: Array<CGImage> = [] // 图片数组（存放每一帧的图片）
     private var timeArr: Array<NSNumber> = [] // 时间数组 (存放每一帧的图片的时间)

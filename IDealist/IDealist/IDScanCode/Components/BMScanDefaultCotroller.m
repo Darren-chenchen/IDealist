@@ -7,7 +7,6 @@
 //  Copyright © http://idhong.com All rights reserved.
 //  Copyright © https://github.com/asiosldh/BMScan All rights reserved.
 //
-
 #import "BMScanDefaultCotroller.h"
 #import "BMDefaultUIView.h"
 #import "UIImage+BMScan.h"

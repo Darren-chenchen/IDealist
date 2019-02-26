@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 public enum IDLoadingUtilLoadingType {
     case wait  // 会阻止用户交互， 需要等待加载完成
     case nav // 一条进度线条

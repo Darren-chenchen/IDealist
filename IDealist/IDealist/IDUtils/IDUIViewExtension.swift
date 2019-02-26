@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 public enum UIViewGradientDirection {
     case horizontally
     case vertically

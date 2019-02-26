@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIImage {
-    
+
     static func my_resizableImage(name: String) -> UIImage {
         let normal = UIImage(named: name)
         let w = (normal?.size.width ?? 0) * 0.5

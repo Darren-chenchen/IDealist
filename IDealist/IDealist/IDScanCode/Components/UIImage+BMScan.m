@@ -10,7 +10,6 @@
 #import "UIImage+BMScan.h"
 #import "BMScanController.h"
 #import "BundleTools.h"
-
 @implementation UIImage (BMScan)
 
 - (NSArray<NSString *> *)bm_identifyCodeArray {

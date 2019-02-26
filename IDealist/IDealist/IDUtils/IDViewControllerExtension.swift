@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 public extension UIViewController {
     //MARK: - Returns: 当前控制器
     public func id_getCurrentViewcontroller() -> UIViewController?{

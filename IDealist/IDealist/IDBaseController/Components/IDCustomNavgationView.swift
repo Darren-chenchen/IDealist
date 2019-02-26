@@ -9,7 +9,7 @@
 import UIKit
 
 open class IDCustomNavgationView: UIView {
-    
+
     public lazy var titleLable:UILabel = {
         let titleLable = UILabel()
         titleLable.textAlignment = .center

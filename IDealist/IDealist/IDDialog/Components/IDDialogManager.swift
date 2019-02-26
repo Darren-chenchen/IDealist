@@ -15,7 +15,6 @@ public class IDDialogManager {
     public var successImage = UIImage(named: "ic_toast_success", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
     public var failImage = UIImage(named: "icn_icn_fail", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
     public var warnImage = UIImage(named: "icon_sign", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
-
     /// 内容的对齐方式
     public var textAlignment = NSTextAlignment.center
     /// 设置主题色，2个按钮时只设置右边的主题色，1个按钮时显示主题色
