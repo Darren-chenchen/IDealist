@@ -97,7 +97,7 @@ open class IDSelectView: UIView {
         }
     }
     /// 指示器的颜色
-    public var id_indicatorColor: UIColor = IDealistConfig.share.mainColor ?? UIColor.red {
+    public var id_indicatorColor: UIColor = IDealistConfig.share.mainColor {
         didSet {
             indicator.indicatorColor = id_indicatorColor
             ellipseIndicator.indicatorColor = id_indicatorColor
@@ -161,7 +161,7 @@ open class IDSelectView: UIView {
         }
     }
     /// 选中状态的颜色
-    public var id_titleSelectedColor: UIColor = IDealistConfig.share.mainColor ?? UIColor.red {
+    public var id_titleSelectedColor: UIColor = IDealistConfig.share.mainColor {
         didSet {
             self.segmentedDataSource.titleSelectedColor = id_titleSelectedColor
             segmentedDataSource.reloadData(selectedIndex: 0)
@@ -284,7 +284,7 @@ open class IDSelectView: UIView {
         }
     }
     /// 红点的颜色
-    open var id_dotColor = IDealistConfig.share.mainColor ?? UIColor.red {
+    open var id_dotColor = IDealistConfig.share.mainColor {
         didSet {
             dotsDataSource.dotColor = id_dotColor
             self.updateDotsType()
@@ -319,16 +319,16 @@ open class IDSelectView: UIView {
         self.addSubview(self.segmentedView)
         
         // 初始化颜色
-        self.dotsDataSource.dotColor = IDealistConfig.share.mainColor ?? UIColor.red
-        self.dotsDataSource.titleSelectedColor = IDealistConfig.share.mainColor ?? UIColor.red
+        self.dotsDataSource.dotColor = IDealistConfig.share.mainColor
+        self.dotsDataSource.titleSelectedColor = IDealistConfig.share.mainColor
 
-        self.numberDataSource.titleSelectedColor = IDealistConfig.share.mainColor ?? UIColor.red
-        self.numberDataSource.numberBackgroundColor = IDealistConfig.share.mainColor ?? UIColor.red
+        self.numberDataSource.titleSelectedColor = IDealistConfig.share.mainColor
+        self.numberDataSource.numberBackgroundColor = IDealistConfig.share.mainColor
 
-        self.segmentedDataSource.titleSelectedColor = IDealistConfig.share.mainColor ?? UIColor.red
+        self.segmentedDataSource.titleSelectedColor = IDealistConfig.share.mainColor
         
-        self.indicator.indicatorColor = IDealistConfig.share.mainColor ?? UIColor.red
-        self.ellipseIndicator.indicatorColor = IDealistConfig.share.mainColor ?? UIColor.red
+        self.indicator.indicatorColor = IDealistConfig.share.mainColor
+        self.ellipseIndicator.indicatorColor = IDealistConfig.share.mainColor
 
         self.initEventHendle()
     }

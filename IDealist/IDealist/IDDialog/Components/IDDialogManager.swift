@@ -12,13 +12,13 @@ public class IDDialogManager {
     var supportQuene: Bool = false
     var animationFromValue: CGFloat = 1
 
-    public var successImage = UIImage(named: "ic_toast_success", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
-    public var failImage = UIImage(named: "icn_icn_fail", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
-    public var warnImage = UIImage(named: "icon_sign", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
+    public var successImage = UIImage(named: "ic_toast_success2", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
+    public var failImage = UIImage(named: "icn_icn_fail2", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
+    public var warnImage = UIImage(named: "icon_sign2", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
     /// 内容的对齐方式
     public var textAlignment = NSTextAlignment.center
     /// 设置主题色，2个按钮时只设置右边的主题色，1个按钮时显示主题色
-    public var mainColor = RGBAColor(13, 122, 255, 1)
+    public var mainColor = IDealistConfig.share.mainColor
     /// 是否支持动画
     public var supportAnimate = true
     /// 自定义动画
@@ -67,9 +67,9 @@ public class IDDialogManager {
         self.common()
     }
     func common() {
-        self.successImage = UIImage(named: "ic_toast_success", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
-        self.failImage = UIImage(named: "icn_icn_fail", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
-        self.warnImage = UIImage(named: "icon_sign", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
+        self.successImage = UIImage(named: "ic_toast_success2", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
+        self.failImage = UIImage(named: "icn_icn_fail2", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
+        self.warnImage = UIImage(named: "icon_sign2", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
 
         self.textAlignment = .center
         self.mainColor = UIColor.black

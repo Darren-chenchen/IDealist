@@ -25,14 +25,14 @@ class TestTextFieldViewController: IDBaseViewController {
         self.view.backgroundColor = UIColor.groupTableViewBackground
 
         self.textF1.maxLength = 10
-        
+
         self.textF2.onlyNumberAndPoint = true
         self.textF2.pointLength = 2
-        
+
         self.textF3.onlyNumber = true
-        
+
         self.textF4.allowEmoji = false
-        
+
         self.textF5.predicateString = "^[a-z0－9A-Z]*$"
     }
 }

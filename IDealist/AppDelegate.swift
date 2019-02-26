@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        IDealistConfig.share.id_setupMainColor(color: UIColor.init(redValue: 14, green: 92, blue: 255, alpha: 1))
+        IDealistConfig.share.id_setupMainColor(color: UIColor.red)
         
         let tabbarVC = IDTabbarViewController()
         tabbarVC.id_setupChildViewController(viewController: MainViewController(), image:  UIImage(named: "icn_nocolor_icn_components"), selectedImage: UIImage(named: "icn_color_icn_components"), title: "Ideal组件")

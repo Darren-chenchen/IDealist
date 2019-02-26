@@ -52,7 +52,7 @@ public class IDImagePicker: NSObject,UIImagePickerControllerDelegate,UINavigatio
     // 相册中是否展示拍照图片
     public var showCamaroInPicture = false
     // 文字和图片的颜色 85 182 55
-    public var tineColor = UIColor.init(red: 85/255.0, green: 182/255.0, blue: 55/255.0, alpha: 1) {
+    public var tineColor = IDealistConfig.share.mainColor {
         didSet {
             CLPickersTools.instence.tineColor = tineColor
         }

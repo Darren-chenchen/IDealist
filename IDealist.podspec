@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'IDealist'
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.swift_version = '4.2'
   s.license = 'MIT'
   s.summary = 'This is a IOS Components'
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.resource_bundles = { 
 	'IDealist' => ['IDealist/IDealist/IDUIKit/Images/**/*.png',
   'IDealist/IDealist/IDToast/Images/**/*.png',
+  'IDealist/IDealist/IDDialog/Images/**/*.png',
   'IDealist/IDealist/IDScanCode/Images/**/*.png',
   'IDealist/IDealist/IDLoading/Images/**/*.png',
   'IDealist/IDealist/IDImagePicker/Images/**/*.png',

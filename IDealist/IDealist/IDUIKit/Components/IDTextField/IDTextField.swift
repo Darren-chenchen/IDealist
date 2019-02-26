@@ -9,19 +9,18 @@
 import UIKit
 
 open class IDTextField: UITextField {
-
     /// 最多允许输入多少个字符
-    public var maxLength: Int?
+    open var maxLength: Int?
     /// 只允许输入数字和小数点
-    public var onlyNumberAndPoint: Bool?
+    open var onlyNumberAndPoint: Bool?
     /// 设置小数点位数
-    public var pointLength: Int?
+    open var pointLength: Int?
     /// 只允许输入数字
-    public var onlyNumber: Bool?
+    open var onlyNumber: Bool?
     /// 禁止输入表情符号emoji
-    public var allowEmoji: Bool?
+    open var allowEmoji: Bool?
     /// 正则表达式
-    public var predicateString: String?
+    open var predicateString: String?
     
     // 记录textview的临时值
     var tempText: String?
