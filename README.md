@@ -4,6 +4,8 @@
 ![Pod Platform](https://img.shields.io/cocoapods/p/IDealist.svg?style=flat)
 ![Pod License](https://img.shields.io/cocoapods/l/IDealist.svg?style=flat)
 
+[部分截图](https://www.jianshu.com/p/de390c583d0b)
+
 # 要求
 
 - iOS 8.0+
