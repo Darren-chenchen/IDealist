@@ -505,7 +505,7 @@
 		957C2532222417030014AD1E /* BundleTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleTools.h; sourceTree = "<group>"; };
 		957C2533222417030014AD1E /* UIImage+BMScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BMScan.h"; sourceTree = "<group>"; };
 		957C2534222417030014AD1E /* IDScanNavgationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDScanNavgationView.swift; sourceTree = "<group>"; };
-		957C2535222417030014AD1E /* IDScanCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDScanCode.h; sourceTree = "<group>"; };
+		957C2535222417030014AD1E /* IDealist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDealist.h; sourceTree = "<group>"; };
 		957C2536222417030014AD1E /* BMDefaultUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDefaultUIView.h; sourceTree = "<group>"; };
 		957C2537222417030014AD1E /* BundleTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleTools.m; sourceTree = "<group>"; };
 		957C2538222417030014AD1E /* UIImage+BMScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BMScan.m"; sourceTree = "<group>"; };
@@ -1069,7 +1069,7 @@
 				957C2531222417030014AD1E /* BMScanController.m */,
 				957C2532222417030014AD1E /* BundleTools.h */,
 				957C2533222417030014AD1E /* UIImage+BMScan.h */,
-				957C2535222417030014AD1E /* IDScanCode.h */,
+				957C2535222417030014AD1E /* IDealist.h */,
 				957C2536222417030014AD1E /* BMDefaultUIView.h */,
 				957C2537222417030014AD1E /* BundleTools.m */,
 				957C2538222417030014AD1E /* UIImage+BMScan.m */,
