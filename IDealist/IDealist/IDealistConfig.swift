@@ -16,7 +16,7 @@ public class IDealistConfig: NSObject {
     public var maxShowInterval: Float = 60
     
     /// switch主题色、progressView主题色、
-    public var mainColor: UIColor? = UIColor.init(red: 13/255.0, green: 133/255.0, blue: 255/255.0, alpha: 1)
+    public var mainColor: UIColor = UIColor.init(red: 13/255.0, green: 133/255.0, blue: 255/255.0, alpha: 1)
     
     public func id_setupMainColor(color: UIColor) {
         self.mainColor = color

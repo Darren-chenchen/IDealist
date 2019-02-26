@@ -56,10 +56,10 @@ open class IDScanCodeController: BMScanDefaultCotroller {
         initView()
     }
     override open func feetColor() -> UIColor! {
-        return IDScanCodeConfig.shared.mainColor
+        return IDealistConfig.share.mainColor
     }
     open override func scanfLin() -> UIColor! {
-        return IDScanCodeConfig.shared.mainColor
+        return IDealistConfig.share.mainColor
     }
     /// 正常情况是居中，return 50 是设置居中偏上50
     open override func areaY() -> CGFloat {

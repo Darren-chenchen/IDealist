@@ -65,7 +65,7 @@ class IDRefreshLoadingView: UIView {
     }
     
     func configureAnimation() {
-        progressShapeLayer.strokeColor = IDealistConfig.share.mainColor?.cgColor
+        progressShapeLayer.strokeColor = IDealistConfig.share.mainColor.cgColor
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.repeatCount = IDealistConfig.share.maxShowInterval
         animation.duration = 1.0

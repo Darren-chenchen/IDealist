@@ -202,7 +202,6 @@
 		957C262E222417040014AD1E /* UIImage+BMScan.m in Sources */ = {isa = PBXBuildFile; fileRef = 957C2538222417030014AD1E /* UIImage+BMScan.m */; };
 		957C262F222417040014AD1E /* BMScanDefaultCotroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 957C253A222417030014AD1E /* BMScanDefaultCotroller.m */; };
 		957C2630222417040014AD1E /* IDScanCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C253B222417030014AD1E /* IDScanCodeController.swift */; };
-		957C2631222417040014AD1E /* IDScanCodeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C253C222417030014AD1E /* IDScanCodeConfig.swift */; };
 		957C2632222417040014AD1E /* IDDialogImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C2540222417030014AD1E /* IDDialogImageView.swift */; };
 		957C2633222417040014AD1E /* IDDialogInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C2541222417030014AD1E /* IDDialogInputView.swift */; };
 		957C2634222417040014AD1E /* IDDialogTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C2542222417030014AD1E /* IDDialogTextView.swift */; };
@@ -513,7 +512,6 @@
 		957C2539222417030014AD1E /* BMScanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMScanController.h; sourceTree = "<group>"; };
 		957C253A222417030014AD1E /* BMScanDefaultCotroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMScanDefaultCotroller.m; sourceTree = "<group>"; };
 		957C253B222417030014AD1E /* IDScanCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDScanCodeController.swift; sourceTree = "<group>"; };
-		957C253C222417030014AD1E /* IDScanCodeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDScanCodeConfig.swift; sourceTree = "<group>"; };
 		957C253D222417030014AD1E /* BMScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMScan.h; sourceTree = "<group>"; };
 		957C2540222417030014AD1E /* IDDialogImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDDialogImageView.swift; sourceTree = "<group>"; };
 		957C2541222417030014AD1E /* IDDialogInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDDialogInputView.swift; sourceTree = "<group>"; };
@@ -676,11 +674,10 @@
 		957C2459222416BA0014AD1E /* IDealist */ = {
 			isa = PBXGroup;
 			children = (
-				957C245A222416D10014AD1E /* IDealist-Bridging-Header.h */,
+				957C2481222417020014AD1E /* IDealistConfig.swift */,
 				957C2573222417040014AD1E /* AppConfig.swift */,
 				957C245E222417020014AD1E /* IDBaseController */,
 				957C253E222417030014AD1E /* IDDialog */,
-				957C2481222417020014AD1E /* IDealistConfig.swift */,
 				957C2467222417020014AD1E /* IDEmptyView */,
 				957C2482222417030014AD1E /* IDImagePicker */,
 				957C250D222417030014AD1E /* IDLoading */,
@@ -1032,6 +1029,9 @@
 		957C251C222417030014AD1E /* IDScanCode */ = {
 			isa = PBXGroup;
 			children = (
+				957C245A222416D10014AD1E /* IDealist-Bridging-Header.h */,
+				957C2534222417030014AD1E /* IDScanNavgationView.swift */,
+				957C253B222417030014AD1E /* IDScanCodeController.swift */,
 				957C251D222417030014AD1E /* Images */,
 				957C252D222417030014AD1E /* Components */,
 			);
@@ -1069,15 +1069,12 @@
 				957C2531222417030014AD1E /* BMScanController.m */,
 				957C2532222417030014AD1E /* BundleTools.h */,
 				957C2533222417030014AD1E /* UIImage+BMScan.h */,
-				957C2534222417030014AD1E /* IDScanNavgationView.swift */,
 				957C2535222417030014AD1E /* IDScanCode.h */,
 				957C2536222417030014AD1E /* BMDefaultUIView.h */,
 				957C2537222417030014AD1E /* BundleTools.m */,
 				957C2538222417030014AD1E /* UIImage+BMScan.m */,
 				957C2539222417030014AD1E /* BMScanController.h */,
 				957C253A222417030014AD1E /* BMScanDefaultCotroller.m */,
-				957C253B222417030014AD1E /* IDScanCodeController.swift */,
-				957C253C222417030014AD1E /* IDScanCodeConfig.swift */,
 				957C253D222417030014AD1E /* BMScan.h */,
 			);
 			path = Components;
@@ -1835,7 +1832,6 @@
 				957C26B92224170E0014AD1E /* TestIDViewViewController.swift in Sources */,
 				957C264A222417040014AD1E /* IDStringExtension.swift in Sources */,
 				957C258B222417040014AD1E /* IDToastUtils.swift in Sources */,
-				957C2631222417040014AD1E /* IDScanCodeConfig.swift in Sources */,
 				957C259B222417040014AD1E /* PencilBrush.swift in Sources */,
 				957C259F222417040014AD1E /* EraserBrush.swift in Sources */,
 				957C26A72224170E0014AD1E /* ComponentCell.swift in Sources */,
@@ -2069,7 +2065,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hd.IDealist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "IDealist/IDealist/IDealist-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "IDealist/IDealist/IDScanCode/IDealist-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2092,7 +2088,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hd.IDealist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "IDealist/IDealist/IDealist-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "IDealist/IDealist/IDScanCode/IDealist-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

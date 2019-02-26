@@ -37,7 +37,7 @@ class NavProgressView: UIView {
         
         self.layer.addSublayer(self.gradientLayer)
         
-        if let rgbArr = IDealistConfig.share.mainColor?.convertRGB() {
+        if let rgbArr = IDealistConfig.share.mainColor.convertRGB() {
             print(rgbArr)
             let r = rgbArr.first ?? 13
             let g = rgbArr[1]

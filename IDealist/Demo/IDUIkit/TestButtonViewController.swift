@@ -113,7 +113,7 @@ class TestButtonViewController: IDBaseViewController {
         btn.id_type = .primary
         btn.setTitleColor(UIColor.white, for: UIControl.State.normal)
         
-        btn.layer.shadowColor = IDealistConfig.share.mainColor?.cgColor
+        btn.layer.shadowColor = IDealistConfig.share.mainColor.cgColor
         btn.layer.shadowOffset = CGSize.init(width: 0, height: 3)
         btn.layer.shadowRadius = 6
         btn.layer.shadowOpacity = 0.3
@@ -127,7 +127,7 @@ class TestButtonViewController: IDBaseViewController {
         btn.setTitleColor(UIColor.white, for: UIControl.State.normal)
         
         btn.layer.cornerRadius = 24
-        btn.layer.shadowColor = IDealistConfig.share.mainColor?.cgColor
+        btn.layer.shadowColor = IDealistConfig.share.mainColor.cgColor
         btn.layer.shadowOffset = CGSize.init(width: 0, height: 3)
         btn.layer.shadowRadius = 6
         btn.layer.shadowOpacity = 0.3
@@ -141,7 +141,7 @@ class TestButtonViewController: IDBaseViewController {
         btn.setTitleColor(UIColor.white, for: UIControl.State.normal)
         
         btn.layer.cornerRadius = 24
-        btn.layer.shadowColor = IDealistConfig.share.mainColor?.cgColor
+        btn.layer.shadowColor = IDealistConfig.share.mainColor.cgColor
         btn.layer.shadowOffset = CGSize.init(width: 0, height: 3)
         btn.layer.shadowRadius = 6
         btn.layer.shadowOpacity = 0.3
