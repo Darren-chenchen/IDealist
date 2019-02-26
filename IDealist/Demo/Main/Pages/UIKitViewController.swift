@@ -32,7 +32,7 @@ class UIKitViewController: IDBaseViewController {
         
         self.view.addSubview(tableView)
         self.tableView.contentInset = UIEdgeInsets.init(top: 10, left: 0, bottom: 0, right: 0)
-        self.id_navTitle = "IDeal"
+        self.id_navTitle = "IDealist"
         self.id_rightBtn.setImage(UIImage(named: "icn_icn_imfomation"), for: .normal)
     }
     override func rightBtnClick() {

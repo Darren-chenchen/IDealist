@@ -14,7 +14,7 @@ class IDInfoViewController: IDBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.id_navTitle = "关于IDeal"
+        self.id_navTitle = "关于IDealist"
     }
 
 }

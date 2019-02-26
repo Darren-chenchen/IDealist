@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IDealistConfig.share.id_setupMainColor(color: UIColor.red)
         
         let tabbarVC = IDTabbarViewController()
-        tabbarVC.id_setupChildViewController(viewController: MainViewController(), image:  UIImage(named: "icn_nocolor_icn_components"), selectedImage: UIImage(named: "icn_color_icn_components"), title: "Ideal组件")
-        tabbarVC.id_setupChildViewController(viewController: UIKitViewController(), image:  UIImage(named: "icn_nocolor_icn_uikit"), selectedImage: UIImage(named: "icn_color_icn_uikit"), title: "IdealUIKit")
-        tabbarVC.id_setupChildViewController(viewController: UtilsViewController(), image:  UIImage(named: "icn_nocolor_icn_utils"), selectedImage: UIImage(named: "icn_color_icn_utils"), title: "IdealUtils")
+        tabbarVC.id_setupChildViewController(viewController: MainViewController(), image:  UIImage(named: "icn_nocolor_icn_components"), selectedImage: UIImage(named: "icn_color_icn_components"), title: "IDealist组件")
+        tabbarVC.id_setupChildViewController(viewController: UIKitViewController(), image:  UIImage(named: "icn_nocolor_icn_uikit"), selectedImage: UIImage(named: "icn_color_icn_uikit"), title: "IDealistUIKit")
+        tabbarVC.id_setupChildViewController(viewController: UtilsViewController(), image:  UIImage(named: "icn_nocolor_icn_utils"), selectedImage: UIImage(named: "icn_color_icn_utils"), title: "IDealistUtils")
         self.window?.rootViewController = tabbarVC
         
         // 解决ios12 pop时tabbar的闪烁问题
