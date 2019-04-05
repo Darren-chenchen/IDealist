@@ -17,10 +17,18 @@ public extension UIDevice {
             if (bottomSafeInset == 34.0 || bottomSafeInset == 21.0) {
                 return true
             } else {
-                return false
+                if (UIScreen.main.bounds.height > 800) {
+                   return true
+                } else {
+                    return false
+                }
             }
         } else {
-            return false
+            if (UIScreen.main.bounds.height > 800) {
+                return true
+            } else {
+                return false
+            }
         }
     }
     
