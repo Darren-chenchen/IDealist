@@ -322,7 +322,9 @@ extension IDButton {
             break
         case .right, .trailing: // 右对齐
             // 这里必须使用self.currentImage的宽度。不能使用imageSize.width，因为图片可能会被压缩或者拉伸，例如当图片的imageEdgeInsets的right设置过大，图片的宽度就会被压缩，这时的图片宽度不是我们要的
-            titleOrigin.x = buttonWidth - (titleSize.width + (self.currentImage?.size.width ?? 0))  - self.titleEdgeInsets.right - self.contentEdgeInsets.right - id_imageTitleSpace
+            let w = titleSize.width + (self.currentImage?.size.width ?? 0)
+            let titlex = buttonWidth - w - self.titleEdgeInsets.right - self.contentEdgeInsets.right - self.id_imageTitleSpace
+            titleOrigin.x = titlex
             break
         case .fill:
             let flag = titleSize.width + (self.currentImage?.size.width ?? 0)
