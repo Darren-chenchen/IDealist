@@ -393,13 +393,16 @@ extension CLImagePickerSingleViewController: UICollectionViewDelegate,UICollecti
                 self?.setSureBtn()
                 if needRefresh {
                     // 判断存在越界的indexpath
+                    print("判断存在越界的indexpath\(CLPickersTools.instence.indexPathArr)")
                     var arr: [IndexPath] = []
                     for item in CLPickersTools.instence.indexPathArr {
                         if item.row < (self?.photoArr?.count ?? 0) {
                             arr.append(item)
                         }
                     }
+                    print(arr)
                     self?.collectionView.reloadItems(at: arr)
+                    print("1111111")
                 }
             }
             

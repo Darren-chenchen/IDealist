@@ -416,6 +416,8 @@ class CLPickersTools {
         let arr = [String]()
         UserDefaults.standard.set(arr, forKey: CLChooseImageAssetLocalIdentifierKey)
         UserDefaults.standard.synchronize()
+        
+        self.indexPathArr  = []
     }
     
     //MARK: - 渐变色
