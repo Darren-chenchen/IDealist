@@ -181,6 +181,7 @@ class IDPreviewViewController: CLBaseImagePickerViewController {
     @IBAction func clickEditorBtn(_ sender: Any) {
         let vc = IDEditorViewController.init(nibName: "IDEditorViewController", bundle: BundleUtil.getCurrentBundle())
         vc.model = self.picArray[self.currentPage-1]
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: false, completion: nil)
     }
     @IBAction func clickSureBtn(_ sender: Any) {

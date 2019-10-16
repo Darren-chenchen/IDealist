@@ -86,6 +86,7 @@ public class IDImagePicker: NSObject,UIImagePickerControllerDelegate,UINavigatio
             alert.addAction(cleanAction)
             alert.addAction(photoAction)
             alert.addAction(choseAction)
+            alert.modalPresentationStyle = .fullScreen
             self.superVC!.present(alert, animated: true, completion: nil)
             
         } else {
@@ -116,6 +117,7 @@ public class IDImagePicker: NSObject,UIImagePickerControllerDelegate,UINavigatio
                         self.idImagePickerClouse!(assetArr,cutImage)
                     }
                 }
+                photo.modalPresentationStyle = .fullScreen
                 self.superVC?.present(photo, animated: true, completion: nil)
             }
         })
@@ -134,6 +136,8 @@ public class IDImagePicker: NSObject,UIImagePickerControllerDelegate,UINavigatio
                 self.cameraPicker = UIImagePickerController()
                 self.cameraPicker.delegate = self
                 self.cameraPicker.sourceType = .camera
+                self.cameraPicker.modalPresentationStyle = .fullScreen
+
                 superVC.present((self.cameraPicker)!, animated: true, completion: nil)
             }
         }
@@ -156,6 +160,7 @@ public class IDImagePicker: NSObject,UIImagePickerControllerDelegate,UINavigatio
                 self.cameraPicker = UIImagePickerController()
                 self.cameraPicker.delegate = self
                 self.cameraPicker.sourceType = .camera
+                self.cameraPicker.modalPresentationStyle = .fullScreen
                 self.superVC!.present((self.cameraPicker)!, animated: true, completion: nil)
             }
         }

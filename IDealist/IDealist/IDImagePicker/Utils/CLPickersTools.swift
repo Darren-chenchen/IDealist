@@ -42,7 +42,7 @@ class CLPickersTools {
         var flagData: [String:[CLImagePickerPhotoModel]]?
         for i in 0..<self.dataArr.count {
             let dict = self.dataArr[i]
-            if dict.keys.first == allPhoto || dict.keys.first == allPhoto2 || dict.keys.first == allPhoto3 || dict.keys.first == allPhoto4 {
+            if dict.keys.first == allPhoto || dict.keys.first == allPhoto2 || dict.keys.first == allPhoto3 || dict.keys.first == allPhoto4 || dict.keys.first == allPhoto5 {
                 flagData = dict
                 self.dataArr.remove(at: i)
                 break
@@ -71,7 +71,7 @@ class CLPickersTools {
         var flagData: [String:[CLImagePickerPhotoModel]]?
         for i in 0..<self.dataArr.count {
             let dict = self.dataArr[i]
-            if dict.keys.first == allPhoto || dict.keys.first == allPhoto2 || dict.keys.first == allPhoto3 || dict.keys.first == allPhoto4 {
+            if dict.keys.first == allPhoto || dict.keys.first == allPhoto2 || dict.keys.first == allPhoto3 || dict.keys.first == allPhoto4 || dict.keys.first == allPhoto5 {
                 flagData = dict
                 break
             }
@@ -164,7 +164,7 @@ class CLPickersTools {
             title = favStr
         } else if assetCollection.localizedTitle == "Videos" {
             title = videoStr
-        } else if assetCollection.localizedTitle == "All Photos" || assetCollection.localizedTitle == "Camera Roll" {
+        } else if assetCollection.localizedTitle == "All Photos" || assetCollection.localizedTitle == "Camera Roll" || assetCollection.localizedTitle == "最近项目" {
             title = allPStr
         } else if assetCollection.localizedTitle == "Recently Added" {
             title = rencentStr

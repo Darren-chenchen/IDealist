@@ -120,6 +120,7 @@ open class IDScanCodeController: BMScanDefaultCotroller {
                 
                 let imagePickerVC = UIImagePickerController()
                 imagePickerVC.delegate = self
+                imagePickerVC.modalPresentationStyle = .fullScreen
                 self.present(imagePickerVC, animated: true, completion: nil)
             }
         }

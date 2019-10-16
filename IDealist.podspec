@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'IDealist'
-  s.version = '0.0.7'
+  s.version = '0.0.8'
   s.swift_version = '4.2'
   s.license = 'MIT'
   s.summary = 'This is a IOS Components'
