@@ -388,17 +388,23 @@ extension CLImageAmplifyView: CAAnimationDelegate {
             self.imageArr.append(imageRef!)
             
             let sourceDict = CGImageSourceCopyPropertiesAtIndex(gifSource!, i, nil) as NSDictionary?
-            let gifDict = sourceDict![String(kCGImagePropertyGIFDictionary)] as! NSDictionary?
-            let time = gifDict![String(kCGImagePropertyGIFUnclampedDelayTime)] as! NSNumber // 每一帧的动画时间
-            self.timeArr.append(time)
-            self.totalTime += time.floatValue
+            let gifDict = sourceDict?[String(kCGImagePropertyGIFDictionary)] as? NSDictionary
+            let time = gifDict?[String(kCGImagePropertyGIFUnclampedDelayTime)] as? NSNumber // 每一帧的动画时间
+            self.timeArr.append(time ?? 0)
+            self.totalTime += time?.floatValue ?? 0
             
             // 获取图片的尺寸 (适应)
-            let imageWidth = sourceDict![String(kCGImagePropertyPixelWidth)] as! NSNumber
-            let imageHeight = sourceDict![String(kCGImagePropertyPixelHeight)] as! NSNumber
+            let imageWidth = sourceDict?[String(kCGImagePropertyPixelWidth)] as? NSNumber
+            let imageHeight = sourceDict?[String(kCGImagePropertyPixelHeight)] as? NSNumber
             
-            if (imageWidth.floatValue / imageHeight.floatValue) != Float(self.frame.size.width/self.frame.size.height) {
-                self.fitScale(imageWidth: CGFloat(imageWidth.floatValue), imageHeight: CGFloat(imageHeight.floatValue))
+            guard let imageWidth_v = imageWidth else {
+                return
+            }
+            guard let imageHeight_v = imageHeight else {
+                return
+            }
+            if (imageWidth_v.floatValue / imageHeight_v.floatValue) != Float(self.frame.size.width/self.frame.size.height) {
+                self.fitScale(imageWidth: CGFloat(imageWidth_v.floatValue), imageHeight: CGFloat(imageHeight_v.floatValue))
             }
         }
         
